@@ -16,15 +16,15 @@ public class SyncMain {
 		//Starting thread
 		companyThread.start();
 		bankThread.start();
-		
-		try{
-			companyThread.join();
-			bankThread.join();
-			System.out.println("Final amt = "+account.getBalance());
-			
-		}catch(InterruptedException e){
-			e.printStackTrace();
-		}
+		System.out.println("Final amt = "+account.getBalance());
+//		try{
+//			companyThread.join();
+//			bankThread.join();
+//			System.out.println("Final amt = "+account.getBalance());
+//			
+//		}catch(InterruptedException e){
+//			e.printStackTrace();
+//		}
 		
 	}
 
