@@ -12,7 +12,7 @@ public class OddEvenPrinter {
 			if (!isEvenPrinted) {
 				wait();
 			}
-			System.out.println(n);
+			System.out.println(Thread.currentThread().getName() + ": " + n);
 			isEvenPrinted = false;
 
 			// Notify other thread to print even number
@@ -26,7 +26,7 @@ public class OddEvenPrinter {
 			if (isEvenPrinted) {
 				wait();
 			}
-			System.out.println(n);
+			System.out.println(Thread.currentThread().getName() + ": " + n);
 			isEvenPrinted = true;
 			// notify other thred to print odd number
 			notify();
