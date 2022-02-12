@@ -4,7 +4,7 @@ import java.util.concurrent.TimeUnit;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
-//At some point in exexution thread 1 and thread2 will be able to acquire both lock1 and lock2
+//At some point in execution thread 1 and thread2 will be able to acquire both lock1 and lock2
 //and complete their execution but behaviour will be unpredictable.It doesn't matter
 //fairness is enabled it will not change the behaviour of both thread
 public class LivelockDemo {
