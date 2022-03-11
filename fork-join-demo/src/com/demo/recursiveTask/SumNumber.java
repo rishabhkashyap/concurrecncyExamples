@@ -1,4 +1,4 @@
-package com.demo.recursiveActions.recursiveTask;
+package com.demo.recursiveTask;
 
 import java.util.Arrays;
 import java.util.concurrent.ForkJoinPool;

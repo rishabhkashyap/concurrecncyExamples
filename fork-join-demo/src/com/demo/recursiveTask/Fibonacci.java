@@ -1,4 +1,4 @@
-package com.demo.recursiveActions.recursiveTask;
+package com.demo.recursiveTask;
 //Calculate nth fibonacci number using RecursiveTask and fork join pool
 import java.util.concurrent.ForkJoinPool;
 import java.util.concurrent.RecursiveTask;
