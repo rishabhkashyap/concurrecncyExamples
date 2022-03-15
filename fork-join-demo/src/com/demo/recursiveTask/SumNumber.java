@@ -37,9 +37,9 @@ class AdditionTask extends RecursiveTask<Integer> {
         AdditionTask additionTaskRight = new AdditionTask(rightArr);
         additionTaskLeft.fork();
         /**
-         * Do not invoke join on both left and right tasks.Invoke fork on one task so that it
+         * Do not invoke fork on both left and right tasks.Invoke fork on one task so that it
          * can use new thread to complete computation and invoke compute on other task so that it
-         * can complete computation in current task.This way less threads are created.
+         * can complete computation in current task.This way program executes efficiently
          * */
         int rightSum = additionTaskRight.compute();
         int leftSum = additionTaskLeft.join();
